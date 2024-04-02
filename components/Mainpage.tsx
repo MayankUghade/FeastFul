@@ -2,11 +2,12 @@ import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import Image from "next/image";
 import FoodImage from "@/public/food.jpg";
 import food2 from "@/public/food2.jpg";
+import Link from "next/link";
 
 export default function Mainpage() {
   return (
     <div className="flex flex-col gap-[80px] mb-10">
-      <div className="sm:p-10 flex-1 flex-col p-3 h-screen items-center justify-between border-t ">
+      <div className="sm:p-10 flex-1 flex-col p-3 h-screen items-center justify-between border-t-2 ">
         {/* This is the main title */}
         <div className="flex flex-col gap-3 lg:ml-[45px] mt-[20px]">
           <div className="inline-block rounded-lg bg-gray-100 px-3 py-2 text-sm dark:bg-gray-800 w-fit">
@@ -24,9 +25,12 @@ export default function Mainpage() {
             celebrate the joy of food together.
           </p>
 
-          <button className="px-5 py-2 bg-green-500 w-fit rounded-lg">
+          <Link
+            href="/signup"
+            className="px-5 py-2 bg-green-500 w-fit rounded-lg"
+          >
             Explore
-          </button>
+          </Link>
         </div>
 
         {/* This is the display image */}
